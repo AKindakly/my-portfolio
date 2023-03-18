@@ -4,7 +4,7 @@ import AboutMe from "./AboutMe";
 const About = () => {
     return (
         <section
-            className="pt-28 xl:pt-44 bg-zinc-300 dark:bg-zinc-900 "
+            className="pt-20 xl:pt-32 bg-zinc-300 dark:bg-zinc-900 "
             id="about"
         >
             <div className="flex flex-col justify-center items-center">

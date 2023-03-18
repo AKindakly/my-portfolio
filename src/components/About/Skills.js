@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-    SiCss3 as CSSlicon,
+    SiCss3 as CSSicon,
     SiHtml5 as Htmlicon,
     SiReact as Reacticon,
     SiJavascript as Jsicon,
@@ -21,7 +21,6 @@ const Skills = () => {
                 Skills
             </h1>
             <p className="text-zinc-600 dark:text-zinc-300 text-base xl:text-2xl py-8 xl:pb-10 ">
-                {" "}
                 Here are technologies I’ve been working with:
             </p>
             <div className="flex">
@@ -85,7 +84,7 @@ const Skills = () => {
                 <div className="text-7xl flex">
                     <div>
                         <Htmlicon className=" m-5 hover:text-orange-600" />
-                        <CSSlicon className=" m-5 hover:text-sky-600" />
+                        <CSSicon className=" m-5 hover:text-sky-600" />
                         <Nodeicon className=" m-5 hover:text-lime-400" />
                     </div>
                     <div>
