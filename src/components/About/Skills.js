@@ -17,9 +17,13 @@ import {
 const Skills = () => {
     return (
         <div className="pb-12 w-3/4">
-            <h1 className="text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 mb-6 xl:mb-14 text-shadow-[0_4px_10px_#3b82f6]">
+            <h1 className="text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 mb-6 text-shadow-[0_4px_10px_#3b82f6]">
                 Skills
             </h1>
+            <p className="text-zinc-600 dark:text-zinc-300 text-base xl:text-2xl py-8 xl:pb-10 ">
+                {" "}
+                Here are technologies I’ve been working with:
+            </p>
             <div className="flex">
                 <div className="flex flex-col text-sm xl:text-base text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-12 xl:px-12 py-8 xl:py-10">
                     <div>

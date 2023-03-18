@@ -18,7 +18,7 @@ const Navbar = (props) => {
     };
 
     return (
-        <nav className="sticky top-0 z-50 flex justify-around xl:justify-between xl:pr-10 xl:pl-32 items-center py-4 xl:py-8 bg-zinc-200 dark:bg-zinc-900 ">
+        <nav className="sticky top-0 z-50 flex justify-around xl:justify-between xl:pr-10 xl:pl-32 items-center py-4 xl:py-6 bg-zinc-300 dark:bg-zinc-900 ">
             <div className="text-sm md:text-base xl:text-lg text-blue-500">
                 <a
                     href="#about"
