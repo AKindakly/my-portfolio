@@ -5,8 +5,6 @@ import ScrollDownIndicator from "./ScrollDownIndicator";
 
 import shape from "../../assets/hero-shape.png";
 import shape1 from "../../assets/hero-shape1.png";
-import wave from "../../assets/hero-wave.png";
-import wave1 from "../../assets/hero-wave1.png";
 
 const Hero = ({ darkMode }) => {
     return (
@@ -15,32 +13,28 @@ const Hero = ({ darkMode }) => {
                 <img
                     src={shape1}
                     alt="Dark Mode"
-                    className="absolute w-full xl:w-11/12"
+                    className="absolute w-full xl:w-7/12"
                 />
             ) : (
                 <img
                     src={shape}
                     alt="Light Mode"
-                    className="absolute w-full xl:w-11/12"
+                    className="absolute w-full xl:w-7/12"
                 />
             )}
-
             <Intro darkMode={darkMode} />
-
             <ScrollDownIndicator />
 
             {darkMode === true ? (
-                <img
-                    src={wave1}
-                    alt="Dark Mode"
-                    className="absolute w-full xl:top-0 bottom-0"
-                />
+                <div id="hero-ocean">
+                    <div id="hero-wave-dark"></div>
+                    <div id="hero-wave-dark"></div>
+                </div>
             ) : (
-                <img
-                    src={wave}
-                    alt="Light Mode"
-                    className="absolute w-full xl:top-0 bottom-0"
-                />
+                <div id="hero-ocean">
+                    <div id="hero-wave-light"></div>
+                    <div id="hero-wave-light"></div>
+                </div>
             )}
         </section>
     );
