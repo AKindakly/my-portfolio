@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./components/Home/Home";
+import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import AboutMe from "./components/About/AboutMe";
+import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -17,52 +16,18 @@ function App() {
 
     return (
         <div className={`${darkMode ? "dark" : ""} `}>
-            <div className=" bg-zinc-200 dark:bg-zinc-800 ">
-                <BrowserRouter>
-                    <Routes>
-                        <Route
-                            excat
-                            path="/"
-                            element={
-                                <>
-                                    <Home darkMode={darkMode} />
-                                    <Navbar
-                                        darkMode={darkMode}
-                                        toggleDarkMode={toggleDarkMode}
-                                    />
-                                    <AboutMe />
-                                    <Projects />
-                                    <Contact />
-                                    <Footer />
-                                </>
-                            }
-                        />
-                        <Route
-                            path="/aboutme"
-                            element={
-                                <>
-                                    <AboutMe />
-                                </>
-                            }
-                        />
-                        <Route
-                            path="/projects"
-                            element={
-                                <>
-                                    <Projects />
-                                </>
-                            }
-                        />
-                        <Route
-                            path="/contact"
-                            element={
-                                <>
-                                    <Contact />
-                                </>
-                            }
-                        />
-                    </Routes>
-                </BrowserRouter>
+            <div className=" bg-zinc-100 dark:bg-zinc-800 ">
+                <>
+                    <Navbar
+                        darkMode={darkMode}
+                        toggleDarkMode={toggleDarkMode}
+                    />
+                    <Hero darkMode={darkMode} />
+                    <About />
+                    <Projects />
+                    <Contact />
+                    <Footer />
+                </>
             </div>
         </div>
     );
