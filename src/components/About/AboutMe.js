@@ -11,7 +11,7 @@ const AboutMe = () => {
             opacity: 1,
             transition: {
                 duration: 2.5,
-                staggerChildren: 1.5,
+                staggerChildren: 1,
                 ease: "easeInOut",
             },
         },
@@ -23,7 +23,7 @@ const AboutMe = () => {
 
     return (
         <div className="mb-24 w-3/4 z-10" ref={ref}>
-            <h1 className=" text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 xl:mb-5 text-shadow-[0_4px_10px_#3b82f6]">
+            <h1 className=" text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 text-shadow-[0_4px_10px_#3b82f6]">
                 About Me
             </h1>
             {inView && (

@@ -288,7 +288,6 @@ code {
         margin-left: -1600px;
     }
 }
-
 @keyframes swell {
     0%,
     100% {
@@ -296,5 +295,18 @@ code {
     }
     50% {
         transform: translate3d(0, 5px, 0);
+    }
+}
+
+#rotate-anim:hover {
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
     }
 }
