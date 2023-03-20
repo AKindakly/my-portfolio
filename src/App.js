@@ -23,7 +23,7 @@ function App() {
                         toggleDarkMode={toggleDarkMode}
                     />
                     <Hero darkMode={darkMode} />
-                    <About />
+                    <About darkMode={darkMode} />
                     <Projects />
                     <Contact />
                     <Footer />

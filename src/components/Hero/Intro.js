@@ -5,7 +5,7 @@ import avatar1 from "../../assets/avatar1.png";
 const Intro = ({ darkMode }) => {
     return (
         <>
-            <div className="flex justify-center items-center h-[calc(100vh-250px)] md:h-[calc(100vh-300px)] xl:h-[calc(100vh-300px)] mb-4 bg-zinc-100 dark:bg-zinc-800 ">
+            <div className="flex justify-center items-center h-[calc(100vh-250px)] md:h-[calc(100vh-300px)] xl:h-[calc(100vh-300px)] mb-10 bg-zinc-100 dark:bg-zinc-800 ">
                 <div className="flex flex-col md:flex-row md:gap-12 xl:gap-24 2xl:gap-56 items-center ">
                     <div className="2xl:w-3/4 z-10">
                         <span className=" text-sm xl:text-lg text-zinc-600 dark:text-zinc-300">

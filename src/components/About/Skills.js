@@ -38,11 +38,11 @@ const Skills = () => {
     };
 
     return (
-        <div className="mb-32 lg:w-3/4">
+        <div className="mb-32 xl:mb-48 w-3/4">
             <h1 className=" text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 text-shadow-[0_4px_10px_#3b82f6]">
                 Skills
             </h1>
-            <p className="text-zinc-600 dark:text-zinc-300 text-base xl:text-2xl xl:pt-10 xl:pb-10 xl:pb-16 py-8 ">
+            <p className="text-zinc-600 dark:text-zinc-300 text-base md:text-lg xl:text-2xl py-8 xl:pt-10 xl:pb-16">
                 Here are technologies I’ve been working with:
             </p>
             <div
@@ -51,7 +51,7 @@ const Skills = () => {
             >
                 {inView && (
                     <motion.div
-                        className="flex flex-col rounded-md basis-1/2 text-sm xl:text-xl text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-12 xl:px-12 py-8 xl:py-10"
+                        className="flex flex-col rounded-md basis-1/2 text-sm md:text-base xl:text-xl text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-12 xl:px-12 py-8 xl:py-10"
                         initial="hidden"
                         animate="visible"
                         variants={firstVariants}
@@ -102,7 +102,7 @@ const Skills = () => {
                         </div>
                         <div>
                             <p className=" text-zinc-600 dark:text-zinc-300 mb-1">
-                                Photoshop
+                                Photoshop, Figma
                             </p>
                             <div className="h-2.5 bg-gray-400 dark:bg-gray-700 rounded-lg mb-4">
                                 <div
