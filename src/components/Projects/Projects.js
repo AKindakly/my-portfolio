@@ -8,7 +8,7 @@ const Projects = () => {
             details:
                 "Moltress is a SPA application built with React.js and Redux. The app includes user authentication, friend requests, and a real-time chatroom.",
             img: "project1.jpg",
-            link: "https://github.com/AKindakly/Spiced_Academy_SocialNetwork",
+            link: "https://github.com/AKindakly/Moltres_Social-Network-App",
             tech: {
                 t1: "React/Redux",
                 t2: "Node.Js/Express",
@@ -16,15 +16,15 @@ const Projects = () => {
             },
         },
         {
-            title: "WebsiteTemplates Galaxy Hotel",
+            title: "Galaxy Hotel a Website Template ",
             details:
-                "This is a responsive hotel website templates using react and bootstrap.",
+                "Galaxy Hotel is a React-based hotel website template with intuitive room search, contact and about us pages, also detailed descriptions of hotel features like the restaurant, pool, and spa.",
             img: "project3.jpg",
-            link: "https://github.com/AKindakly/final-project",
+            link: "https://github.com/AKindakly/Galaxy-Hotel_Website-Template",
             tech: {
                 t1: "React",
-                t2: "Bootstrap",
-                t3: "Styled-Components",
+                t2: "CSS3",
+                t3: "React Context",
             },
         },
         {

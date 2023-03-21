@@ -5,7 +5,7 @@ import { FiExternalLink as ExlinkIcon } from "react-icons/fi";
 
 const ProjectCard = ({ title, details, img, tech, link }) => {
     return (
-        <div className="flex flex-col md:flex-row justify-between mb-28">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-28">
             <div className="md:w-2/5">
                 <h3 className="text-lg md:text-xl xl:text-3xl text-blue-500 font-bold mb-5">
                     {title}
@@ -47,7 +47,7 @@ const ProjectCard = ({ title, details, img, tech, link }) => {
             <img
                 src={require(`../../assets/${img}`)}
                 alt={title}
-                className="rounded-2xl object-cover w-80 md:w-72 h-72 mt-7 md:mt-0 xl:mr-5"
+                className="rounded-2xl object-cover w-80 h-72 lg:w-1/3 lg:h-1/3 md:w-72  mt-7 md:mt-0 xl:mr-5"
             />
         </div>
     );
