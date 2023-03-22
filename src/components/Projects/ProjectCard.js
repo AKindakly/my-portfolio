@@ -5,7 +5,7 @@ import { FiExternalLink as ExlinkIcon } from "react-icons/fi";
 
 const ProjectCard = ({ title, details, img, tech, link }) => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center mb-28">
+        <div className="flex flex-col md:flex-row justify-between mb-28">
             <div className="md:w-2/5">
                 <h3 className="text-lg md:text-xl xl:text-3xl text-blue-500 font-bold mb-5">
                     {title}

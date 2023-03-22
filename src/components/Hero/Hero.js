@@ -2,6 +2,8 @@ import React from "react";
 
 import Intro from "./Intro";
 import ScrollDownIndicator from "./ScrollDownIndicator";
+import waveStart from "../../assets/wave-start.png";
+import waveStart1 from "../../assets/wave-start1.png";
 
 const Hero = ({ darkMode }) => {
     return (
@@ -9,17 +11,11 @@ const Hero = ({ darkMode }) => {
             <Intro darkMode={darkMode} />
             <ScrollDownIndicator />
 
-            {/* {darkMode === true ? (
-                <div id="hero-ocean">
-                    <div id="hero-wave-dark"></div>
-                    <div id="hero-wave-dark"></div>
-                </div>
+            {darkMode === true ? (
+                <img src={waveStart1} alt="Dark Mode" className="w-full" />
             ) : (
-                <div id="hero-ocean">
-                    <div id="hero-wave-light"></div>
-                    <div id="hero-wave-light"></div>
-                </div>
-            )} */}
+                <img src={waveStart} alt="Light Mode" className="w-full" />
+            )}
         </section>
     );
 };

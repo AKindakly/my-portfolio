@@ -7,7 +7,7 @@ import waveEnd from "../../assets/wave-end.svg";
 
 const About = ({ darkMode }) => {
     return (
-        <section className="pt-20 xl:pt-32 " id="about">
+        <section id="about">
             <div className="flex flex-col justify-center items-center bg-zinc-300 dark:bg-zinc-900 ">
                 <AboutMe />
                 <Skills />
