@@ -1,12 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import { BsGithub as GithubIcon } from "react-icons/bs";
 import { FiExternalLink as ExlinkIcon } from "react-icons/fi";
 
 const ProjectCard = ({ title, details, img, tech, link }) => {
+    const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
+    const containerVariants = {
+        hidden: { opacity: 0, transform: "translateZ(0) scale(0.8)" },
+        visible: {
+            opacity: 1,
+            transform: "translateZ(0) scale(1)",
+            transition: {
+                duration: 1.5,
+                ease: "ease",
+            },
+        },
+    };
+
     return (
-        <div className="flex flex-col md:flex-row justify-between mb-28">
-            <div className="md:w-2/5">
+        <div
+            ref={ref}
+            className="flex flex-col md:flex-row justify-between mb-60"
+        >
+            <motion.div
+                className="md:w-2/5"
+                variants={containerVariants}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+            >
                 <h3 className="text-lg md:text-xl xl:text-3xl text-blue-500 font-bold mb-5">
                     {title}
                 </h3>
@@ -42,10 +65,12 @@ const ProjectCard = ({ title, details, img, tech, link }) => {
                         <ExlinkIcon />
                     </a>
                 </div>
-            </div>
-
-            <img
+            </motion.div>
+            <motion.img
                 src={require(`../../assets/${img}`)}
+                variants={containerVariants}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
                 alt={title}
                 className="rounded-2xl object-cover w-80 h-72 lg:w-1/3 lg:h-1/3 md:w-72  mt-7 md:mt-0 xl:mr-5"
             />

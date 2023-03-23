@@ -9,6 +9,7 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 code {
@@ -256,4 +257,8 @@ code {
     100% {
         transform: rotateY(360deg);
     }
+}
+
+.navactive {
+    border-bottom: 3px solid red;
 }

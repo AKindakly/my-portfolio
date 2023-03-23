@@ -42,13 +42,13 @@ const Skills = () => {
             <h1 className=" text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 text-shadow-[0_4px_10px_#3b82f6]">
                 Skills
             </h1>
-            <p className="text-zinc-600 dark:text-zinc-300 text-base md:text-lg xl:text-2xl py-8 xl:pt-10 xl:pb-16">
+            <p
+                ref={ref}
+                className="text-zinc-600 dark:text-zinc-300 text-base md:text-lg xl:text-2xl py-8 xl:pt-10 xl:pb-16"
+            >
                 Here are technologies I’ve been working with:
             </p>
-            <div
-                className="flex flex-col gap-10 md:flex-row items-center lg:justify-between "
-                ref={ref}
-            >
+            <div className="flex flex-col gap-10 md:flex-row items-center lg:justify-between ">
                 {inView && (
                     <motion.div
                         className="flex flex-col rounded-md basis-1/2 text-sm md:text-base xl:text-xl text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-12 xl:px-12 py-8 xl:py-10"
@@ -69,7 +69,7 @@ const Skills = () => {
                         </div>
                         <div>
                             <p className=" text-zinc-600 dark:text-zinc-300 mb-1">
-                                CSS3, Tailwind & Bootstrap
+                                CSS3
                             </p>
                             <div className="h-2.5 bg-gray-400 dark:bg-gray-700  rounded-lg mb-4 xl:mb-8">
                                 <div
@@ -96,7 +96,7 @@ const Skills = () => {
                             <div className="h-2.5 bg-gray-400 dark:bg-gray-700 rounded-lg mb-4 xl:mb-8">
                                 <div
                                     className="h-2.5 bg-blue-500 rounded-lg"
-                                    style={{ width: "75%" }}
+                                    style={{ width: "83%" }}
                                 ></div>
                             </div>
                         </div>

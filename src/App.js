@@ -25,7 +25,7 @@ function App() {
                     <Hero darkMode={darkMode} />
                     <About darkMode={darkMode} />
                     <Projects />
-                    <Contact />
+                    <Contact darkMode={darkMode} />
                     <Footer />
                 </>
             </div>

@@ -5,13 +5,10 @@ import {
     BsLinkedin as LinkedinIcon,
 } from "react-icons/bs";
 
-const Follow = () => {
+const ContactFollow = () => {
     return (
         <div>
-            <h1 className=" text-xl md:text-2xl font-bold text-blue-500 mb-10 text-center text-shadow-[0_4px_10px_#3b82f6]">
-                Follow Me
-            </h1>
-            <div className="flex gap-10 justify-center text-xl md:text-2xl pb-10 text-blue-500">
+            <div className="flex gap-28 md:gap-10 lg:gap-28 text-2xl xl:text-4xl md:text-2xl mt-5 lg:mt-10 mb-10 ml-2 md:ml-0 text-blue-500">
                 <a
                     href="https://github.com/AKindakly"
                     target="blank"
@@ -38,4 +35,4 @@ const Follow = () => {
     );
 };
 
-export default Follow;
+export default ContactFollow;

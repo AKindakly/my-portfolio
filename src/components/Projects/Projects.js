@@ -55,7 +55,7 @@ const Projects = () => {
 
     return (
         <section
-            className="pt-10 md:pt-0 bg-zinc-100 dark:bg-zinc-800"
+            className=" md:pt-10 md:pt-0 bg-zinc-100 dark:bg-zinc-800"
             id="projects"
         >
             <div className="flex justify-center">

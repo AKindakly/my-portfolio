@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+
 import {
     BsFillMoonFill as MoonIcon,
     BsFillSunFill as SunIcon,
@@ -18,26 +20,38 @@ const Navbar = (props) => {
     };
 
     return (
-        <nav className="sticky top-0 z-50 flex justify-around xl:justify-between xl:pr-10 xl:pl-32 items-center py-4 xl:py-6 bg-zinc-300 dark:bg-zinc-900 ">
+        <nav className="sticky top-0 z-50 flex justify-around xl:justify-between xl:pr-10 xl:pl-32 items-center py-4 xl:py-6 bg-gradient-to-b from-white to-transparent dark:from-black dark:to-transparent">
             <div className="text-sm md:text-base xl:text-lg text-blue-500">
-                <a
-                    href="#about"
-                    className="font-medium hover:text-shadow-[0_4px_10px_#3b82f6] mr-2 xl:mr-10 xl:text-2xl"
+                <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={1000}
+                    className="font-medium hover:text-shadow-[0_4px_10px_#3b82f6] mr-2 xl:mr-10 xl:text-2xl scroll-behavior"
                 >
                     About
-                </a>
-                <a
-                    href="#projects"
+                </Link>
+                <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    duration={1000}
                     className="font-medium hover:text-shadow-[0_4px_10px_#3b82f6] mr-2 xl:mr-10 xl:text-2xl"
                 >
                     Projects
-                </a>
-                <a
-                    href="#contact"
+                </Link>
+                <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
                     className="font-medium hover:text-shadow-[0_4px_10px_#3b82f6] xl:text-2xl"
                 >
                     Contact
-                </a>
+                </Link>
             </div>
             <div className="flex text-sm md:text-base">
                 <button className="flex items-center text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 bg-gradient-to-r from-blue-500 to-Blue-800 px-3 md:px-4 py-2 rounded-md shadow-lg shadow-blue-500/50 xl:text-lg ">
