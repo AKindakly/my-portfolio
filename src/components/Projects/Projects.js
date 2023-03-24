@@ -42,8 +42,8 @@ const Projects = () => {
         {
             title: "Pearly Whites a Dental Praxis Template",
             details:
-                "This is a responsive Praxis website templates using react and bootstrap.",
-            img: "project4.jpg",
+                "Pearly Whites is a responsive Praxis website templates built with react and bootstrap.",
+            img: "project4.png",
             link: "https://github.com/AKindakly/final-project",
             tech: {
                 t1: "React",
