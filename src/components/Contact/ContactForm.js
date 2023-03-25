@@ -40,6 +40,8 @@ const ContactForm = () => {
             method="POST"
             name="contact"
         >
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className=" flex flex-col ">
                 <input
                     type="text"
