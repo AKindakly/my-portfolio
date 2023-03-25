@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import CV from "../../assets/CV.pdf";
 
 import {
     BsFillMoonFill as MoonIcon,
@@ -54,10 +55,21 @@ const Navbar = (props) => {
                 </Link>
             </div>
             <div className="flex text-sm md:text-base">
-                <button className="flex items-center text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 bg-gradient-to-r from-blue-500 to-Blue-800 px-3 md:px-4 py-2 rounded-md shadow-lg shadow-blue-500/50 xl:text-lg ">
+                {/* <button
+                    className="flex items-center text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 bg-gradient-to-r from-blue-500 to-Blue-800 px-3 md:px-4 py-2 rounded-md shadow-lg shadow-blue-500/50 xl:text-lg "
+                >
                     Resume &nbsp;
                     <DownloadIcon />
-                </button>
+                </button> */}
+                <a
+                    className="flex items-center text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 bg-gradient-to-r from-blue-500 to-Blue-800 px-3 md:px-4 py-2 rounded-md shadow-lg shadow-blue-500/50 xl:text-lg "
+                    href={CV}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Resume &nbsp;
+                    <DownloadIcon />
+                </a>
                 <button
                     className="text-blue-500 hover:text-blue-300 ml-4 md:ml-10 xl:text-2xl xl:mr-20"
                     onClick={someFunc}

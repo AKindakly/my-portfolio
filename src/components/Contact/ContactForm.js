@@ -20,18 +20,33 @@ const ContactForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-        // TODO: Send form data to server or email service
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => alert("Thank you for your submission"))
+            .catch((error) => alert(error));
     };
 
     return (
         <form
             onSubmit={handleSubmit}
             className=" flex flex-col justify-center gap-6 lg:w-2/5"
+            data-netlify="true"
+            method="POST"
+            name="contact"
         >
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className=" flex flex-col ">
                 <input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Your Name"
                     value={name}
                     onChange={handleNameChange}
@@ -43,6 +58,7 @@ const ContactForm = () => {
                 <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="Your Email"
                     value={email}
                     onChange={handleEmailChange}
@@ -53,6 +69,7 @@ const ContactForm = () => {
             <div className=" flex flex-col">
                 <textarea
                     id="message"
+                    name="message"
                     value={message}
                     placeholder="Your Message"
                     onChange={handleMessageChange}

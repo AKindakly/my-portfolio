@@ -10,7 +10,7 @@ const Contact = ({ darkMode }) => {
         <section className="bg-zinc-100 dark:bg-zinc-800" id="contact">
             {darkMode === true ? (
                 <div
-                    className="lg:h-[calc(100vh-180px)] flex justify-center "
+                    className="xl:h-[calc(100vh-180px)] flex justify-center "
                     style={{
                         backgroundImage: `url(${contactWave1})`,
                         backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ const Contact = ({ darkMode }) => {
                 </div>
             ) : (
                 <div
-                    className="lg:h-[calc(100vh-180px)] flex justify-center "
+                    className="xl:h-[calc(100vh-180px)] flex justify-center "
                     style={{
                         backgroundImage: `url(${contactWave})`,
                         backgroundRepeat: "no-repeat",

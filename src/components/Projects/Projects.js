@@ -8,7 +8,10 @@ const Projects = () => {
             details:
                 "Moltress is a SPA application built with React.js and Redux. The app includes user authentication, friend requests, and a real-time chatroom.",
             img: "project1.png",
-            link: "https://github.com/AKindakly/Moltres_Social-Network-App",
+            link: {
+                l1: "https://github.com/AKindakly/Moltres_Social-Network-App",
+                l2: "https://moltres.fly.dev/",
+            },
             tech: {
                 t1: "React/Redux",
                 t2: "Node.Js/Express",
@@ -20,7 +23,10 @@ const Projects = () => {
             details:
                 "Galaxy Hotel is a React-based hotel website template with intuitive room search, contact and about us pages, also detailed descriptions of hotel features like the restaurant, pool, and spa.",
             img: "project3.png",
-            link: "https://github.com/AKindakly/Galaxy-Hotel_Website-Template",
+            link: {
+                l1: "https://github.com/AKindakly/Galaxy-Hotel_Website-Template",
+                l2: "https://galaxy-hotel.netlify.app/",
+            },
             tech: {
                 t1: "React",
                 t2: "CSS3",
@@ -32,7 +38,10 @@ const Projects = () => {
             details:
                 "Special Scenes is a dynamic single-page application built with Vue.js, AWS, and Node.js. It allows users to upload their photos and view them in real-time, with the option to enlarge photos and leave comments. ",
             img: "project2.png",
-            link: "https://github.com/AKindakly/Spiced_Academy_ImageBoard",
+            link: {
+                l1: "https://github.com/AKindakly/Spiced_Academy_ImageBoard",
+                l2: "https://github.com/AKindakly/Spiced_Academy_ImageBoard",
+            },
             tech: {
                 t1: "Vue.js",
                 t2: "AWS S3",
@@ -44,7 +53,10 @@ const Projects = () => {
             details:
                 "Pearly Whites is a responsive Praxis website templates built with react and bootstrap.",
             img: "project4.png",
-            link: "https://github.com/AKindakly/final-project",
+            link: {
+                l1: "https://github.com/AKindakly/Praxis-Website-Templates",
+                l2: "https://github.com/AKindakly/Praxis-Website-Templates",
+            },
             tech: {
                 t1: "React",
                 t2: "Bootstrap",
