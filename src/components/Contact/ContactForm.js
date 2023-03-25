@@ -17,28 +17,29 @@ const ContactForm = () => {
         setMessage(event.target.value);
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     // console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    //     const myForm = event.target;
+    //     const formData = new FormData(myForm);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => alert("Thank you for your submission"))
-            .catch((error) => alert(error));
-    };
+    //     fetch("/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         body: new URLSearchParams(formData).toString(),
+    //     })
+    //         .then(() => alert("Thank you for your submission"))
+    //         .catch((error) => alert(error));
+    // };
 
     return (
         <form
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             className=" flex flex-col justify-center gap-6 lg:w-2/5"
             data-netlify="true"
             method="POST"
             name="contact"
+            onSubmit="submit"
         >
             <input type="hidden" name="form-name" value="contact" />
 
