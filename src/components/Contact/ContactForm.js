@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ContactForm = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    // const [name, setName] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [message, setMessage] = useState("");
 
-    const handleNameChange = (event) => {
-        setName(event.target.value);
-    };
+    // const handleNameChange = (event) => {
+    //     setName(event.target.value);
+    // };
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
+    // const handleEmailChange = (event) => {
+    //     setEmail(event.target.value);
+    // };
 
-    const handleMessageChange = (event) => {
-        setMessage(event.target.value);
-    };
+    // const handleMessageChange = (event) => {
+    //     setMessage(event.target.value);
+    // };
 
     // const handleSubmit = (event) => {
     //     event.preventDefault();
@@ -39,18 +39,15 @@ const ContactForm = () => {
             data-netlify="true"
             method="POST"
             name="contact"
-            onSubmit="submit"
         >
-            <input type="hidden" name="form-name" value="contact" />
-
             <div className=" flex flex-col ">
                 <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Your Name"
-                    value={name}
-                    onChange={handleNameChange}
+                    // value={name}
+                    // onChange={handleNameChange}
                     className="px-3 py-2 text-zinc-600 dark:text-zinc-300 text-sm md:text-base xl:text-xl bg-zinc-50 dark:bg-zinc-900 rounded border border-blue-500"
                     required
                 />
@@ -61,8 +58,8 @@ const ContactForm = () => {
                     id="email"
                     name="email"
                     placeholder="Your Email"
-                    value={email}
-                    onChange={handleEmailChange}
+                    // value={email}
+                    // onChange={handleEmailChange}
                     className="px-3 py-2 text-zinc-600 dark:text-zinc-300 text-sm md:text-base xl:text-xl bg-zinc-50 dark:bg-zinc-900 rounded border border-blue-500"
                     required
                 />
@@ -71,9 +68,9 @@ const ContactForm = () => {
                 <textarea
                     id="message"
                     name="message"
-                    value={message}
                     placeholder="Your Message"
-                    onChange={handleMessageChange}
+                    // value={message}
+                    // onChange={handleMessageChange}
                     className="px-3 pt-2 pb-28 text-zinc-600 dark:text-zinc-300 text-sm md:text-base xl:text-xl bg-zinc-50 dark:bg-zinc-900 rounded border border-blue-500"
                     required
                 ></textarea>
