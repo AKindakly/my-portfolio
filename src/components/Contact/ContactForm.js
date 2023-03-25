@@ -36,7 +36,7 @@ const ContactForm = () => {
         <form
             // onSubmit={handleSubmit}
             className=" flex flex-col justify-center gap-6 lg:w-2/5"
-            data-netlify="true"
+            netlify
             method="POST"
             name="contact"
         >
