@@ -4,6 +4,21 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
     const myProjects = [
         {
+            title: "Pearly Whites a Dental Praxis Template",
+            details:
+                "Pearly Whites is a responsive Praxis website templates built with react and bootstrap with admin page for controlling the site and adding infos.",
+            img: "project4.png",
+            link: {
+                l1: "https://github.com/AKindakly/Praxis-Website-Templates",
+                l2: "https://pearlywhites.netlify.app/",
+            },
+            tech: {
+                t1: "React",
+                t2: "Bootstrap",
+                t3: "PostgreSQL",
+            },
+        },
+        {
             title: "Moltress a Social Network",
             details:
                 "Moltress is a SPA application built with React.js and Redux. The app includes user authentication, friend requests, and a real-time chatroom.",
@@ -46,21 +61,6 @@ const Projects = () => {
                 t1: "Vue.js",
                 t2: "AWS S3",
                 t3: "Node.Js/Express",
-            },
-        },
-        {
-            title: "Pearly Whites a Dental Praxis Template",
-            details:
-                "Pearly Whites is a responsive Praxis website templates built with react and bootstrap.",
-            img: "project4.png",
-            link: {
-                l1: "https://github.com/AKindakly/Praxis-Website-Templates",
-                l2: "https://github.com/AKindakly/Praxis-Website-Templates",
-            },
-            tech: {
-                t1: "React",
-                t2: "Bootstrap",
-                t3: "PSQL",
             },
         },
     ];
