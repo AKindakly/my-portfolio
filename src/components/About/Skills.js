@@ -48,10 +48,10 @@ const Skills = () => {
             >
                 Here are technologies I’ve been working with:
             </p>
-            <div className="flex flex-col gap-10 md:flex-row items-center lg:justify-between ">
+            <div className="flex flex-col gap-10 lg:flex-row md:justify-center items-center lg:justify-between ">
                 {inView && (
                     <motion.div
-                        className="flex flex-col rounded-md basis-1/2 text-sm md:text-base xl:text-xl text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-12 xl:px-12 py-8 xl:py-10"
+                        className="flex flex-col w-11/12 rounded-md basis-1/2 text-sm md:text-base xl:text-xl text-center shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] px-8 xl:px-12 py-6 xl:py-10"
                         initial="hidden"
                         animate="visible"
                         variants={firstVariants}
@@ -115,7 +115,7 @@ const Skills = () => {
                 )}
                 {inView && (
                     <motion.div
-                        className="text-zinc-600 text-3xl md:text-4xl lg:text-5xl xl:text-7xl flex dark:text-zinc-300"
+                        className="text-zinc-600 text-4xl md:text-6xl lg:text-6xl xl:text-7xl flex dark:text-zinc-300"
                         initial="hidden"
                         animate="visible"
                         variants={secondVariants}

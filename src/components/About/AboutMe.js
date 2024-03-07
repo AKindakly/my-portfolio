@@ -22,7 +22,7 @@ const AboutMe = () => {
     };
 
     return (
-        <div className="pt-5 xl:pt-16 mb-24 xl:mb-40 w-3/4 z-10">
+        <div className="pt-5 xl:pt-16 mb-20 xl:mb-40 w-3/4 z-10">
             <h1
                 className=" text-xl md:text-2xl xl:text-4xl font-bold text-blue-500 text-shadow-[0_4px_10px_#3b82f6]"
                 ref={ref}

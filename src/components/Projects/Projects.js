@@ -4,7 +4,22 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
     const myProjects = [
         {
-            title: "Pearly Whites a Dental Praxis Template",
+            title: "PizzaNow - Pizza Order Website:",
+            details:
+                "Crafted with Next.js and MongoDB, PizzaNow boasts seamless pizza ordering. Its intuitive admin panel ensures easy site management, making it the perfect blend of technology and gastronomy.",
+            img: "project5.png",
+            link: {
+                l1: "https://github.com/AKindakly/pizza-ordering",
+                l2: "https://pizza-now-now.vercel.app/",
+            },
+            tech: {
+                t1: "Next.js",
+                t2: "Tailwind CSS",
+                t3: "MongoDB",
+            },
+        },
+        {
+            title: "Pearly Whites - Dental Praxis Template",
             details:
                 "Pearly Whites is a responsive Praxis website templates built with react and bootstrap with admin page for controlling the site and adding infos.",
             img: "project4.png",
@@ -19,7 +34,7 @@ const Projects = () => {
             },
         },
         {
-            title: "Moltress a Social Network",
+            title: "Moltress - Social Network Website",
             details:
                 "Moltress is a SPA application built with React.js and Redux. The app includes user authentication, friend requests, and a real-time chatroom.",
             img: "project1.png",
@@ -34,7 +49,7 @@ const Projects = () => {
             },
         },
         {
-            title: "Galaxy Hotel a Website Template ",
+            title: "Galaxy Hotel - Hotel Website Template ",
             details:
                 "Galaxy Hotel is a React-based hotel website template with intuitive room search, contact and about us pages, also detailed descriptions of hotel features like the restaurant, pool, and spa.",
             img: "project3.png",
@@ -49,7 +64,7 @@ const Projects = () => {
             },
         },
         {
-            title: "Special Scenes an Image Board",
+            title: "Special Scenes - Image Board",
             details:
                 "Special Scenes is a dynamic single-page application built with Vue.js, AWS, and Node.js. It allows users to upload their photos and view them in real-time, with the option to enlarge photos and leave comments. ",
             img: "project2.png",

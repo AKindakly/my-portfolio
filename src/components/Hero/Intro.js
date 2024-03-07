@@ -26,7 +26,7 @@ const Intro = ({ darkMode }) => {
                         <img
                             src={avatar}
                             alt="Dark Mode"
-                            className=" w-72 mt-6 md:w-80 2xl:w-2/4"
+                            className=" w-72 mt-6 md:w-80 xl:w-2/4"
                         />
                     ) : (
                         <img

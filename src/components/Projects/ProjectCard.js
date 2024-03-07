@@ -22,7 +22,7 @@ const ProjectCard = ({ title, details, img, tech, link }) => {
     return (
         <div
             ref={ref}
-            className="flex flex-col md:flex-row justify-between mb-60"
+            className="flex flex-col md:flex-row justify-between items-center mb-60"
         >
             <motion.div
                 className="md:w-2/5"
@@ -72,7 +72,7 @@ const ProjectCard = ({ title, details, img, tech, link }) => {
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 alt={title}
-                className="rounded-2xl object-cover w-80 h-72 lg:w-1/3 lg:h-1/3 md:w-72  mt-7 md:mt-0 xl:mr-5"
+                className="rounded-2xl object-cover w-80 h-72 lg:w-2/5 lg:h-2/5 md:w-72  mt-7 md:mt-0 xl:mr-5 "
             />
         </div>
     );
